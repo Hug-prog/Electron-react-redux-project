@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { animesSlice } from './slices/anime/AnimeSlice';
+import { animesSlice } from './slices/anime/AnimesSlice';
+import { TopCharactersSlice } from './slices/character/TopCharactersSlice';
 // ...
 
 export const storeApp = configureStore({
   reducer: {
     animes: animesSlice.reducer,
+    topCharacters: TopCharactersSlice.reducer,
   },
 });
 

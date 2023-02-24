@@ -1,14 +1,11 @@
-import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+import MainRoutes from 'renderer/routes/MainRoutes';
 import '../../assets/style/main.scss';
-import Home from '../../views/Home/Home';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <div>
+      <MainRoutes />
+    </div>
   );
 };
 
